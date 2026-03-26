@@ -1,0 +1,80 @@
+:root{
+    --primary-color: #000;
+    --secondary-color: #e7e6e6;
+    --third-color: #000;
+    --text-color: #1f1f1f;
+    --text-color-dark: lightgray;
+    --text-body-font: "Bookman Old Style", sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #909bc2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 50px;
+    width: 60vw;
+    min-height: 400px;
+    border: transparent;
+    border-radius: 30px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    animation: appear 1.5s ease-out;
+}
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.container p{
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+.container h1{
+    font-size: 2rem;
+    color: #7b00ff;
+    margin-bottom: 20px;
+    animation: scale 1s ease-out;
+}
+@keyframes scale {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+button{
+    padding: 10px 40px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #7b00ff;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover{
+    background-color: #3b054c;
+}
