@@ -11,6 +11,7 @@
     <title>La Jaibita Tampiqueña</title>
     <link rel="shortcut icon" href="Img/Icono_web_2.svg" type="image/x-svg+xml" sizes="32x32">
     <link rel="stylesheet" href="Css/style.css">
+    <script src="Js/script.js"></script>
     <script src="https://kit.fontawesome.com/5277fc70e3.js" crossorigin="anonymous"></script>
  </head>
  <body>
@@ -29,7 +30,7 @@
       <main>
          <section class="hero">
             <article>
-              <h2>La Jaibita Tampiqueña</h2>
+              <h2 id="hero-title">La Jaibita Tampiqueña</h2>
               <p>El restaurante de mariscos más tradicional de Tampico, conocido por su auténtica cocina regional y su ambiente acogedor. Tenemos deliciosos mariscos preparados con los ingredientes más frescos y la mejor calidad.</p>
               <button type="button" class="btn_hero" id="btn_menu"><a href="Pages/menu.html">Ver menú</a></button>
               <button type="button" class="btn_hero" id="btn_reserve"><a href="Pages/contact.html">Reservar</a></button>
@@ -40,123 +41,175 @@
               <h2>¿Porqué elegirnos?</h2>
               <p>En La Jaibita Tampiqueña, nos enorgullece ofrecer a nuestros clientes una experiencia culinaria única y auténtica. Nuestro compromiso con la calidad, el sabor y el servicio excepcional nos distingue como el restaurante de mariscos preferido en Tampico. Aquí hay algunas razones por las que deberías elegirnos:</p>
                <ul>
-                 <li><b>Ingredientes frescos:</b> Utilizamos solo los ingredientes más frescos y de alta calidad para preparar nuestros platillos, asegurando un sabor excepcional en cada bocado.</li>
-                 <li><b>Recetas tradicionales:</b> Nuestras recetas están inspiradas en la rica tradición culinaria de Tampico, ofreciendo auténticos sabores regionales que te transportarán a la costa.</li>
-                 <li><b>Ambiente acogedor:</b> Nuestro restaurante ofrece un ambiente cálido y acogedor, perfecto para disfrutar de una comida con amigos y familiares.</li>
-                 <li><b>Servicio excepcional:</b> Nuestro equipo de atención al cliente está dedicado a brindar un servicio amable y eficiente, asegurando que cada visita sea memorable.</li>
+                 <li><b><i class="fa-solid fa-fish"></i> Ingredientes frescos:</b> Utilizamos solo los ingredientes más frescos y de alta calidad para preparar nuestros platillos, asegurando un sabor excepcional en cada bocado.</li>
+                 <li><b><i class="fa-solid fa-list"></i> Recetas tradicionales:</b> Nuestras recetas están inspiradas en la rica tradición culinaria de Tampico, ofreciendo auténticos sabores regionales que te transportarán a la costa.</li>
+                 <li><b><i class="fa-solid fa-utensils"></i> Ambiente acogedor:</b> Nuestro restaurante ofrece un ambiente cálido y acogedor, perfecto para disfrutar de una comida con amigos y familiares.</li>
+                 <li><b><i class="fa-solid fa-award"></i> Servicio excepcional:</b> Nuestro equipo de atención al cliente está dedicado a brindar un servicio amable y eficiente, asegurando que cada visita sea memorable.</li>
                </ul>
             </article>
             <img src="Img/feedback_img.png" alt="Feedback image">
          </section>
          <section class="especialities">
-            <div class="carrousel" id="carrousel">
+            <div class="card-container">
                <div class="card">
-                  <img src="Img/camarones.webp" alt="Card-1">
+                  <img src="Img/plate-1.jpg" alt="Card-1">
                   <div class="card-content">
-                    <h3>Card 1</h3>
-                    <h4>Seccion 1</h4>
-                    <p>Descripción del platillo 1</p>
-                    <span class="price">$15.99</span>
-                    <button class="add-button"><i class="fa-solid fa-plus"></i> Pedir</button>
+                    <h3>Jaibas Rellenas</h3>
+                    <h4>Manjares de la casa</h4>
+                    <p>Jaibas rellenas con una mezcla de camarones, cebolla y especias, servidas con salsa de tomate y cilantro.</p>
+                    <span class="price">$120.00</span>
+                    <button class="add-button"><a href="Pages/contact.html"><i class="fa-solid fa-plus"></i> Pedir</a></button>
                   </div>
                </div>
                <div class="card">
-                  <img src="Img/camarones.webp" alt="Card-2">
+                  <img src="Img/plate-2.jpg" alt="Card-2">
                   <div class="card-content">
-                    <h3>Card 2</h3>
-                    <h4>Seccion 1</h4>
-                    <p>Descripción del platillo 2</p>
-                    <span class="price">$18.99</span>
-                     <button class="add-button"><i class="fa-solid fa-plus"></i> Pedir</button>
+                    <h3>Tortas de Jaiba</h3>
+                    <h4>Manjares de la casa</h4>
+                    <p>Preparación consistente en una mezcla de pulpa de jaiba desmenuzada, huevo, pan molido o harina, y sazonadores (ajo, cebolla, perejil, pimiento morrón).</p>
+                    <span class="price">$95.00</span>
+                     <button class="add-button"><a href="Pages/contact.html"><i class="fa-solid fa-plus"></i> Pedir</a></button>
                   </div>
                </div>
                <div class="card">
-                  <img src="Img/camarones.webp" alt="Card-3">
+                  <img src="Img/plate-3.jpg" alt="Card-3">
                   <div class="card-content">
-                    <h3>Card 3</h3>
-                    <h4>Seccion 1</h4>
-                    <p>Descripción del platillo 3</p>
-                    <span class="price">$12.99</span>
-                     <button class="add-button"><i class="fa-solid fa-plus"></i> Pedir</button>
+                    <h3>Camarones empanizados</h3>
+                    <h4>Manjares de la casa</h4>
+                    <p>Camarones empanizados y fritos, servidos con una deliciosa salsa de tomate y cilantro.</p>
+                    <span class="price">$115.00</span>
+                     <button class="add-button"><a href="Pages/contact.html"><i class="fa-solid fa-plus"></i> Pedir</a></button>
                   </div>
                </div>
             </div>
          </section>
-         <section class="menu_preview">
-           <div class="menu-sections">
-            <article class="menu-section">
-             <img src="Img/camarones.webp" alt="seccion-1">
+         <section class="menu-preview">
+           <article class="menu-section">
+             <img src="Img/hero-2.png" alt="seccion-1">
              <h3>Mariscos</h3>
-             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, cumque dolor magni temporibus labore, numquam, est eaque nulla corporis in delectus? Ad tempora obcaecati fugit aliquam quos libero quasi aliquid!</p>
-            </article>
-            <article class="menu-section">
-             <img src="Img/camarones.webp" alt="seccion-2">
+             <p>El exquisito sabor de los mariscos frescos de este maravilloso puerto Jaibo llamado Tampico, incluyendo jaibas, camarones, ostiones y pescado.</p>
+             </article>
+           <article class="menu-section">
+             <img src="Img/menu-kids.jpg" alt="seccion-2">
              <h3>Menu Kids</h3>
-             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, cumque dolor magni temporibus labore, numquam, est eaque nulla corporis in delectus? Ad tempora obcaecati fugit aliquam quos libero quasi aliquid!</p>
-            </article>
-           </div>
-           <div class="menu-description">
-            <h2>La Jaibita Tampiqueña</h2>
+             <p>Una selección especial de platillos ideales para los más pequeños, con sabores deliciosos y presentaciones atractivas, incluyendo milanesas, nuggets .</p>
+           </article>
+           <article class="menu-description">
+            <h4>La Jaibita Tampiqueña</h4>
             <h3>Vista previa del menu</h3>
+            <hr>
             <table>
                <tr>
                   <td>
                      <article class="description">
-                       <h4>Ensalada de Atún</h4>
-                       <span>$12.99</span><span>4.5 calificación</span>
-                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, cumque dolor magni temporibus labore, numquam, est eaque nulla corporis in delectus? Ad tempora obcaecati fugit aliquam quos libero quasi aliquid!</p>
-                     </article> 
+                       <h4>Jaiba a la frank</h4>
+                       <span>$12.99</span>
+                       <p>Jaiba a la frank con ingredientes frescos y sabor delicioso.</p>
+                     </article>
                   </td>
                   <td>
-                     <button class="add-button">Agregar</button>
-                  </td>
-               </tr>
-               <tr>
-                  <td>
-                     <article class="description">
-                       <h4>Ensalada de Atún</h4>
-                       <span>$12.99</span><span>4.5 calificación</span>
-                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, cumque dolor magni temporibus labore, numquam, est eaque nulla corporis in delectus? Ad tempora obcaecati fugit aliquam quos libero quasi aliquid!</p>
-                     </article> 
-                  </td>
-                  <td>
-                     <button class="add-button">Agregar</button>
+                     <button class="add-button"><i class="fa-solid fa-plus"></i>Agregar</button>
                   </td>
                </tr>
                <tr>
                   <td>
                      <article class="description">
                        <h4>Ensalada de Atún</h4>
-                       <span>$12.99</span><span>4.5 calificación</span>
-                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, cumque dolor magni temporibus labore, numquam, est eaque nulla corporis in delectus? Ad tempora obcaecati fugit aliquam quos libero quasi aliquid!</p>
+                       <span>$12.99</span>
+                       <p>ensalada de atún con ingredientes frescos y sabor delicioso.</p>
                      </article> 
                   </td>
                   <td>
-                     <button class="add-button">Agregar</button>
+                     <button class="add-button"><i class="fa-solid fa-plus"></i> Agregar</button>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <article class="description">
+                       <h4>Ostiones preparados</h4>
+                       <span>$12.99</span>
+                       <p>Ostiones preparados con ingredientes frescos y sabor delicioso.</p>
+                     </article> 
+                  </td>
+                  <td>
+                     <button class="add-button"><i class="fa-solid fa-plus"></i>Agregar</button>
                   </td>
                </tr>
             </table>
-           </div>
+           </article>
          </section>
+         <svg class="vector" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0f0f0f" fill-opacity="1" d="M0,160L21.8,144C43.6,128,87,96,131,122.7C174.5,149,218,235,262,266.7C305.5,299,349,277,393,256C436.4,235,480,213,524,218.7C567.3,224,611,256,655,245.3C698.2,235,742,181,785,186.7C829.1,192,873,256,916,277.3C960,299,1004,277,1047,234.7C1090.9,192,1135,128,1178,106.7C1221.8,85,1265,107,1309,133.3C1352.7,160,1396,192,1418,208L1440,224L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z"></path></svg>
          <section class="about">
             <article>
                <h2>Acerca de Nosotros</h2>
-               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+               <p>En <b>La Jaibita Tampiqueña</b>, nos dedicamos a ofrecer la mejor experiencia culinaria con productos frescos y sabores auténticos de Tampico, buscando favorecer el consumo de mariscos y darle un deleite de paladar tanto a nuestros residentes Tampiqueños como a turistas que nos visitan de vez en cuando.</p>
                <button class="about-button"><a href="Pages/about.html">Saber más</a></button>
             </article>
-            <img src="Img/camarones.webp" alt="imagen sobre nosotros">
+            <img src="Img/ostiones.png" alt="imagen sobre nosotros">
          </section>
          <section class="contact">
             <article class="contact-block" id="contact-form">
-
+               <h2><i class="fa-solid fa-phone"></i> Contáctanos</h2>
+               <p>¿Tienes alguna pregunta o deseas hacer una reserva? No dudes en contactarnos. Estamos aquí para ayudarte y asegurarnos de que tengas la mejor experiencia en La Jaibita Tampiqueña.</p>
+               <form action="#" method="post">
+                  <table class="controls">
+                     <tr>
+                        <td><label for="name">Nombre Completo:</label></td>
+                        <td><input type="text" name="name" id="name" placeholder="Nombre completo" required ></td>
+                     </tr>
+                     <tr>
+                        <td><label for="email">Correo Electrónico:</label></td>
+                        <td><input type="email" name="email" id="email" placeholder="Correo electrónico" required autocomplete="email"></td>
+                     </tr>
+                     <tr>
+                        <td><label for="phone">Número de teléfono:</label></td>
+                        <td><input type="tel" name="phone" id="phone" placeholder="Número de teléfono" required autocomplete="phone"></td>
+                     </tr>
+                  </table>
+                  <textarea name="message" id="message" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                  <button type="submit" id="send-button">Enviar</button>
+                  <span id="form-message"></span>
+               </form>
             </article>
             <article class="contact-block" id="contact-map">
-
-            </article>
+               <h2><i class="fa-solid fa-compass"></i> Encuéntranos</h2>
+               <p>Visítanos en nuestra ubicación en Tampico, donde podrás disfrutar de nuestros deliciosos mariscos en un ambiente acogedor. ¡Te esperamos!</p>
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d230.85572611357307!2d-97.85453250316989!3d22.21382290956759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d7f79701b26947%3A0xde41285c487cf56!2s1829%20Hotel%20Restaurante-Bar!5e0!3m2!1ses-419!2smx!4v1775108934919!5m2!1ses-419!2smx" width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
          </section>
       </main>
       <footer>
-
+         <div>
+           <article class="social">
+            <h2>¡Síguenos en nuestras redes sociales!</h2>
+            <div class="social-icons">
+               <a href="https://www.facebook.com/LaJaibitaTampiqueña" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+               <a href="https://www.instagram.com/lajaibitatampiquena/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+               <a href="https://twitter.com/JaibitaTamp" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+               <a href="https://www.youtube.com/@LaJaibitaTampique%C3%B1a" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+         </article>
+         <article class="boletin">
+            <h2>Suscríbete a nuestro boletín</h2>
+            <p>Recibe las últimas noticias, ofertas especiales y eventos directamente en tu bandeja de entrada. ¡No te pierdas nada de lo que sucede en La Jaibita Tampiqueña!</p>
+            <form action="#" method="post" id="subscribe-form">
+               <input type="email" name="email" id="subscribe-email" placeholder="Ingresa tu correo electrónico" required autocomplete="email">
+               <button type="submit" id="subscribe-button">Subscribirse</button>
+               <span id="subscribe-message"></span>
+            </form>
+         </article>
+         </div>
+         <article class="hours">
+            <h2><i class="fa-solid fa-calendar-days"></i> Horario de servicio</h2>
+            <p>Martes a Sábado: 9:00 AM - 10:00 PM</p>
+            <p>Domingo: 12:00 PM - 8:00 PM</p>
+         </article>
+         <article class="links">
+            <a href="#">Terminos de uso</a>
+            <a href="#">Política de privacidad</a>
+            <a href="#">Accesibilidad web</a>
+            <a href="#">Tus opciones de privacidad</a>
+         </article>
+         <p>&copy; 2026 La Jaibita Tampiqueña. Todos los derechos reservados.</p>
       </footer>
    </div>
  </body>
