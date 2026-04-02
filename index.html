@@ -11,15 +11,195 @@
     <title>La Jaibita Tampiqueña</title>
     <link rel="shortcut icon" href="Img/Icono_web_2.svg" type="image/x-svg+xml" sizes="32x32">
     <link rel="stylesheet" href="Css/style.css">
+    <script src="https://kit.fontawesome.com/5277fc70e3.js" crossorigin="anonymous"></script>
  </head>
  <body>
-    <section class="container">
-      <h1>Bienvenido a nuestro sitio web</h1>
-      <p>Dale clic a este botón para ver que pasa</p>
-      <button type="button">Clic Me</button>
-      <div class="editor" id="editor"></div>
-    </section>
-    
-    <script src="Js/script.js"></script>
+   <div class="container">
+      <header>
+         <img src="Img/Isotipo-flat.png" alt="Isotipo" id="isotipo">
+         <img src="Img/Logo.png"" alt="logotipo" id="logo">
+         <nav>
+           <a href="#" class="active-link">Inicio</a>
+           <a href="about.html">Nosotros</a>
+           <a href="menu.html">Menu</a>
+           <a href="contact.html">Contacto</a>
+         </nav>
+         <button type="button" id="btn_subscribe">Subscribirse</button>
+      </header>
+      <main>
+         <section class="hero">
+            <article>
+              <h2>La Jaibita Tampiqueña</h2>
+              <p>El restaurante de mariscos más tradicional de Tampico, conocido por su auténtica cocina regional y su ambiente acogedor. Tenemos deliciosos mariscos preparados con los ingredientes más frescos y la mejor calidad.</p>
+              <button type="button" class="btn_hero" id="btn_menu">Ver menú</button>
+              <button type="button" class="btn_hero" id="btn_reserve">Reservar</button>
+            </article>
+         </section>
+         <section class="fleetback">
+            <article>
+              <h2>¿Porqué elegirnos?</h2>
+              <p>En La Jaibita Tampiqueña, nos enorgullece ofrecer a nuestros clientes una experiencia culinaria única y auténtica. Nuestro compromiso con la calidad, el sabor y el servicio excepcional nos distingue como el restaurante de mariscos preferido en Tampico. Aquí hay algunas razones por las que deberías elegirnos:</p>
+               <ul>
+                 <li><b>Ingredientes frescos:</b> Utilizamos solo los ingredientes más frescos y de alta calidad para preparar nuestros platillos, asegurando un sabor excepcional en cada bocado.</li>
+                 <li><b>Recetas tradicionales:</b> Nuestras recetas están inspiradas en la rica tradición culinaria de Tampico, ofreciendo auténticos sabores regionales que te transportarán a la costa.</li>
+                 <li><b>Ambiente acogedor:</b> Nuestro restaurante ofrece un ambiente cálido y acogedor, perfecto para disfrutar de una comida con amigos y familiares.</li>
+                 <li><b>Servicio excepcional:</b> Nuestro equipo de atención al cliente está dedicado a brindar un servicio amable y eficiente, asegurando que cada visita sea memorable.</li>
+               </ul>
+            </article>
+            <img src="Img/feedback_img.png" alt="Feedback image">
+         </section>
+         <section class="especialities">
+            <div class="carrousel" id="carrousel">
+               <div class="card">
+                  <img src="Img/camarones.webp" alt="Card-1">
+                  <div class="card-content">
+                    <h3>Card 1</h3>
+                    <h4>Seccion 1</h4>
+                    <p>Descripción del platillo 1</p>
+                    <span class="price">$15.99</span>
+                  </div>
+               </div>
+               <div class="card">
+                  <img src="Img/camarones.webp" alt="Card-2">
+                  <div class="card-content">
+                    <h3>Card 2</h3>
+                    <h4>Seccion 1</h4>
+                    <p>Descripción del platillo 2</p>
+                    <span class="price">$18.99</span>
+                  </div>
+               </div>
+               <div class="card">
+                  <img src="Img/camarones.webp" alt="Card-3">
+                  <div class="card-content">
+                    <h3>Card 3</h3>
+                    <h4>Seccion 1</h4>
+                    <p>Descripción del platillo 3</p>
+                    <span class="price">$12.99</span>
+                  </div>
+               </div>
+               <div class="card">
+                  <img src="Img/camarones.webp" alt="Card-3">
+                  <div class="card-content">
+                    <h3>Card 4</h3>
+                    <h4>Seccion 1</h4>
+                    <p>Descripción del platillo 4</p>
+                    <span class="price">$14.99</span>
+                  </div>
+               </div>
+               <div class="card">
+                  <img src="Img/camarones.webp" alt="Card-3">
+                  <div class="card-content">
+                    <h3>Card 5</h3>
+                    <h4>Seccion 1</h4>
+                    <p>Descripción del platillo 5</p>
+                    <span class="price">$16.99</span>
+                  </div>
+               </div>
+               <div class="card">
+                  <img src="Img/camarones.webp" alt="Card-3">
+                  <div class="card-content">
+                    <h3>Card 6</h3>
+                    <h4>Seccion 1</h4>
+                    <p>Descripción del platillo 6</p>
+                    <span class="price">$12.99</span>
+                  </div>
+               </div>
+               <div class="card">
+                  <img src="Img/camarones.webp" alt="Card-3">
+                  <div class="card-content">
+                    <h3>Card 7</h3>
+                    <h4>Seccion 1</h4>
+                    <p>Descripción del platillo 7</p>
+                    <span class="price">$12.99</span>
+                  </div>
+               </div>
+               <div class="card">
+                  <img src="Img/camarones.webp" alt="Card-3">
+                  <div class="card-content">
+                    <h3>Card 8</h3>
+                    <h4>Seccion 1</h4>
+                    <p>Descripción del platillo 8</p>
+                    <span class="price">$12.99</span>
+                  </div>   
+               </div>
+            </div>
+         </section>
+         <section class="menu_preview">
+           <div class="menu-sections">
+            <article class="menu-section">
+             <img src="Img/camarones.webp" alt="seccion-1">
+             <h3>Mariscos</h3>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, cumque dolor magni temporibus labore, numquam, est eaque nulla corporis in delectus? Ad tempora obcaecati fugit aliquam quos libero quasi aliquid!</p>
+            </article>
+            <article class="menu-section">
+             <img src="Img/camarones.webp" alt="seccion-2">
+             <h3>Menu Kids</h3>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, cumque dolor magni temporibus labore, numquam, est eaque nulla corporis in delectus? Ad tempora obcaecati fugit aliquam quos libero quasi aliquid!</p>
+            </article>
+           </div>
+           <div class="menu-description">
+            <h2>La Jaibita Tampiqueña</h2>
+            <h3>Vista previa del menu</h3>
+            <table>
+               <tr>
+                  <td>
+                     <article class="description">
+                       <h4>Ensalada de Atún</h4>
+                       <span>$12.99</span><span>4.5 calificación</span>
+                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, cumque dolor magni temporibus labore, numquam, est eaque nulla corporis in delectus? Ad tempora obcaecati fugit aliquam quos libero quasi aliquid!</p>
+                     </article> 
+                  </td>
+                  <td>
+                     <button class="add-button">Agregar</button>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <article class="description">
+                       <h4>Ensalada de Atún</h4>
+                       <span>$12.99</span><span>4.5 calificación</span>
+                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, cumque dolor magni temporibus labore, numquam, est eaque nulla corporis in delectus? Ad tempora obcaecati fugit aliquam quos libero quasi aliquid!</p>
+                     </article> 
+                  </td>
+                  <td>
+                     <button class="add-button">Agregar</button>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <article class="description">
+                       <h4>Ensalada de Atún</h4>
+                       <span>$12.99</span><span>4.5 calificación</span>
+                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, cumque dolor magni temporibus labore, numquam, est eaque nulla corporis in delectus? Ad tempora obcaecati fugit aliquam quos libero quasi aliquid!</p>
+                     </article> 
+                  </td>
+                  <td>
+                     <button class="add-button">Agregar</button>
+                  </td>
+               </tr>
+            </table>
+           </div>
+         </section>
+         <section class="about">
+            <article>
+               <h2>Acerca de Nosotros</h2>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+               <button class="about-button"><a href="Pages/about.html">Saber más</a></button>
+            </article>
+            <img src="Img/camarones.webp" alt="imagen sobre nosotros">
+         </section>
+         <section class="contact">
+            <article class="contact-block" id="contact-form">
+
+            </article>
+            <article class="contact-block" id="contact-map">
+
+            </article>
+         </section>
+      </main>
+      <footer>
+
+      </footer>
+   </div>
  </body>
 </html>
