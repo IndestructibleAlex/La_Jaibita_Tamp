@@ -5,6 +5,7 @@
     --text-color: #1f1f1f;
     --text-color-dark: #d3d3d3;
     --text-body-font: "Bookman Old Style", sans-serif;
+    --text-title-font: Georgia, 'Times New Roman', Times, serif;
 }
 *{
     margin: 0;
@@ -13,7 +14,7 @@
 }
 body{
     background-color: var(--secondary-color);
-    font-family: var(--text-body-font), 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: var(--text-body-font);
     color: var(--text-color);
 }
 .container{
@@ -33,6 +34,7 @@ body{
 a{
     text-decoration: none;
     color: var(--secondary-color);
+    letter-spacing: 1px;
 }
 p{
     font-family: 'Bookman Old Style', sans-serif;
@@ -40,7 +42,7 @@ p{
 header{
     width: 100%;
     max-width: 1950px;
-    padding: 20px 40px;
+    padding: 10px 40px;
     background-color: var(--third-color);
     border-bottom: 1px solid #0a429d;
     display: inline-flex;
@@ -54,6 +56,7 @@ nav a{
 }
 nav a:hover{
     color: rgb(235, 192, 77);
+    transform: scale(1.2);
 }
 .active-link{
     color: #055ae3;
@@ -80,6 +83,17 @@ nav a:hover{
 .hero article{
     margin: 60px 50px;
     max-width: 40%;
+    animation: appear 1s ease-in-out;
+}
+@keyframes appear{
+    from{
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 .hero article h2{
     font-size: 50px;
@@ -94,23 +108,34 @@ nav a:hover{
 .btn_hero{
     background-color: var(--primary-color);
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
     color: var(--text-color-dark);
-    margin-top: 15px;
-    padding: 10px 20px;
+    margin-top: 20px;
+    padding: 10px 30px;
     border-radius: 15px;
+    margin-right: 10px;
     border: none;
     width: fit-content;
+    transition: all 0.3s ease-in-out;
+}
+.btn_hero:hover{
+    background-color: #093172;
 }
 #btn_subscribe{
     background-color: var(--primary-color);
     font-family: Arial, Helvetica, sans-serif;
     color: var(--text-color-dark);
     font-weight: bold;
-    margin-top: 15px;
+    height: 40px;
+    align-self: center;
     padding: 4px 35px;
-    border-radius: 10px;
+    border-radius: 18px;
     border: none;
-    width: fit-content;
+    transition: all 0.3s ease-in-out;
+}
+#btn_subscribe:hover{
+    background-color: #093172;
+    transform: scale(1.2);
 }
 .carrousel{
     display: flex;
@@ -169,6 +194,9 @@ nav a:hover{
     cursor: pointer;
     margin-top: 15px;
     justify-self: end;
+}
+.add-button:hover{
+    background-color: #093172;
 }
 .fleetback{
     display: flex;
