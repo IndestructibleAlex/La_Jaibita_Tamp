@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="description" content="Restaurante de mariscos">
+    <meta name="keywords" content="mariscos, restaurante, Tampico">
+    <meta name="author" content="La Jaibita Tampiqueña">
+    <meta name="robots" content="index, follow">
+    <title>La Jaibita | Nosotros</title>
+    <link rel="shortcut icon" href="Img/Icono_web_2.svg" type="image/x-svg+xml" sizes="32x32">
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/about.css">
+    <script src="Js/script.js" defer></script>
+    <script src="https://kit.fontawesome.com/5277fc70e3.js" crossorigin="anonymous"></script>
+ </head>
+ <body>
+    <div class="container">
+        <header>
+         <img src="Img/Isotipo-flat.png" alt="Isotipo" id="isotipo">
+         <img src="Img/Logo.png"" alt="logotipo" id="logo">
+         <nav id="menuList">
+           <a href="index.html">Inicio</a>
+           <a href="#" class="active-link">Nosotros</a>
+           <a href="menu.html">Menu</a>
+           <a href="contact.html">Contacto</a>
+           <button type="button" id="btn_subscribe">Subscribirse</button>
+         </nav>
+         <div class="menu-icon"><i class="fa-solid fa-bars" onclick="toggle_menu()"></i></div>
+      </header>
+      <main>
+        <section class="imagen-fondo">
+            <h1>Nosotros</h1>
+        </section>
+        <section class="about-story">
+            <h2>Nuestra Historia</h2>
+            <h3>¿Cómo comenzó todo?</h3>
+            <p>El proyecto <b>La Jaibita Tampiqueña</b> nace de la necesidad de tener un lugar donde se muestre la grandeza de Tampico en la parte culinaria. Nuestro objetivo fue diseñar restaurante con toque cultural enfocado a promover la gastronomía tampiqueña con relación a los mariscos y que tenga una temática clásica, hogareña y que favorezca el consumo de mariscos, tanto en ciudadanos tampiqueños como turistas en la zona centro.</p>
+            <p>Poniendo algo de contexto, tenemos que con el paso del tiempo el consumo de mariscos pasó de ser algo poco común a convertirse en un emblema de la ciudad. En los 50s, la gastronomía marina apenas comenzaba a ganar terreno. Uno de los pioneros fue el restaurante La Tamaulipeca, ubicado en un edificio de estilo neoyorquino en las calles Díaz Mirón y 2 de Enero.</p>
+            <p>Su menú incluía sopa de mariscos, jaibas rellenas y salpicón de pescado. Otros establecimientos, como la Cantina Cosmopolita frente a la Plaza de Armas, empezaron a ofrecer camarones y jaibas naturales como botana, lo que atrajo a una clientela más amplia.</p> 
+            <p>El bajo costo y la abundancia de los productos del mar en aquel entonces, sumado a los nuevos métodos de conservación, consolidaron esta comida como la más popular de la zona, dándole a Tampico su identidad como el <i>"Puerto Jaibo"</i>. </p> 
+            <p>Por lo tanto, hoy en día es una de las razones por las cuales el turismo se ha fortalecido, y nuestro restaurante sería un gran beneficio para la ciudad y potenciaría la promoción del patrimonio, ya que se busca promover la gastronomía marina y que <i>La Jaibita Tampiqueña</i> sea el primer lugar que se te venga a la mente cuando pienses en un sitio para ir a comer comida tradicional Tampiqueña, ya que no solo nos limitamos a los mariscos, sino también ofrecemos otros platillos típicos de la región.</p>          
+              <article>   
+                <img src="Img/about-story-1.webp" alt="platillo 1" class="photos" id="photo1" onclick="show_details_1()">
+                 <details id="info1">
+                  <h3>¿Porqué elegimos los mariscos?</h3>
+                  <p>El hecho de que Tampico sea un puerto favorece el consumo de este tipo de productos, además, como estamos ubicados en la zona centro, el consumo es aún mayor debido a la cercanía con la zona pescera y hoteles.</p>
+                 </details>
+                <img src="Img/about-story-2.jpg" alt="platillo 2" class="photos" id="photo2" onclick="show_details_2()">
+                <details id="info2">
+                  <h3>El puerto Jaibo</h3>
+                  <p>A Tampico se le conoce así debido a la histórica abundancia de jaibas (un tipo de cangrejo azul) en los cuerpos de agua que rodean la ciudad, como la Laguna del Carpintero, el río Pánuco y el Golfo de México, convirtiéndose en un elemento icónico de su gastronomía y cultura desde principios del siglo XX. .</p>
+                </details>
+                <img src="Img/about-story-3.jpg" alt="platillo 3" class="photos" id="photo3" onclick="show_details_3()">
+                <details id="info3">
+                  <h3>Una ciudad llena de vida</h3>
+                  <p>Tampico es un destino turístico clave en el noreste de México, destacado por su riqueza cultural, gastronómica y natural. Sus principales atractivos incluyen la Laguna del Carpintero con avistamiento de cocodrilos, el Centro Histórico, la Ruta de las Cantinas, museos interactivos y su cercanía con la Playa Miramar en Madero.</p>
+                </details>
+            </article>
+        </section>
+        <svg xmlns="http://www.w3.org/2000/svg" class="vector-1" viewBox="0 0 1440 320"><path fill="#0f0f0f" fill-opacity="1" d="M0,192L30,170.7C60,149,120,107,180,106.7C240,107,300,149,360,186.7C420,224,480,256,540,272C600,288,660,288,720,245.3C780,203,840,117,900,112C960,107,1020,181,1080,224C1140,267,1200,277,1260,282.7C1320,288,1380,288,1410,288L1440,288L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path></svg>
+        <section class="about-food">
+            <h2>Nuestra Comida</h2>
+            <h3>Ofrecemos platillos exquisitos para deleitar tu paladar</h3>
+            <p>Nuestros platillos no solo son deliciosos y exquisitos, sino que también están hechos con mucho cariño, en nuestro restaurante siempre tratamos de brindarles el mejor servicio de atención para que su experiencia sea única y se vayan con una sonrisa en su rostro, y no sólo pensamos en el público general sino también en los más pequeños, ya que si a ellos no se les dan mucho los mariscos, pueden optar por el delicioso menú Kids donde le ofrecemos platillos que van desde milanesas de pollo, Nuggets, tortitas de papa y hamburguesas. Con esto toda la familia puede disfrutar de la grandiosa experiencia de <i>La Jaibita Tampiqueña</i>, porque unos de nuestros objetivos es que nuestro restaurante sea familiar. </p>
+            <br>
+            <h3>Favorecemos el comercio local</h3>
+            <p>Otra de nuestras características es que tratamos de favorecer el comercio local, todos nuestros suministros, tanto de ingredientes, carnes, verduras y a mayor razón los mariscos, incluso nuestro merchandising, lo obtenemos de proveedores locales, mayormente de la zona de los mecados, todo con el fin de apoyarlos y traerles la mejor calidad a su plato.</p>
+          </section>
+        <section class="about-cards">
+              <article class="about-card">
+                <img src="Img/card-1.webp" alt="imagen 1">
+                <div class="about-card-content">
+                    <h3>La Puntilla</h3>
+                    <h4>La base del mar</h4>
+                    <p>Todo el marisco que ocupamos en nuestro local lo compramos en el mercado de mariscos <b>La Puntilla</b> con el fin de apoyar a pescadores y aprovechar nuestra cercanía con el río Pánuco.</p>
+                </div>
+              </article>
+              <article class="about-card">
+                <img src="Img/card-2.jpg" alt="imagen 2">
+                <div class="about-card-content">
+                    <h3>El Mercado</h3>
+                    <h4>Calidad y frescura</h4>
+                    <p>Este lugar nos ofrece todas nuestras hortalizas y productos de abarrotes y carnes, buscando siempre la mejor calidad para preparar nuestras comidas. También incluye la fruta para nuestras aguas de sabor.</p>
+                </div>
+              </article>
+              <article class="about-card">
+                <img src="Img/card-3.jpeg" alt="imagen 3">
+                <div class="about-card-content">
+                    <h3>Tampico</h3>
+                    <h4>Una ciudad que se distingue</h4>
+                    <p>Esperamos ser de su agrado y que vengan a visitarnos cuando gusten, los atenderemos con mucho gusto y verán porqué buscamos convertirnos en el restaurante n°1 de Tampico con un toque cultural</p>
+                </div>
+              </article> 
+        </section>
+        <section class="about-culture">
+          <div>
+            <img src="Img/Restaurante_1.jpg" alt="restauracion">
+            <img src="Img/Restaurante_2.png" alt="restauracion 2">
+          </div>
+          <article>
+            <h2>Dfundimos la conservación del patrimonio</h2>
+            <p>Para la apertura de nuestro local no fue necesaria la compra de ningún terreno, ni mucho menos recurrimos a construir el local desde cero, lo que queríamos era que nuestro restaurante reflejara la arquitectura tradicional de Tampico, y de cierta forma que conservara algo de esencia de los edificios antiguos de la ciudad, es por ello que elegimos el antiguo edificio del Gremio Unido de Alijadores como la base de todo.</p>
+            <p>En este caso lo que hicimos fue restaurarlo un poco y para no cambiar completamente la imagen, sólo ocupamos la planta baja, de igual forma se buscaba conservar el diseño original del inmueble, sólo agregando algunos elementos en la parte de abajo.</p>
+            <p>Para la remodelación se pintó el edificio de un color jade, para que contrastara con el restaurante pero que no perdiera sus colores originales. En cuanto al restaurante se buscó un diseño con madera barnizada y se pintaron las paredes de un color gris oscuro, asemejando un poco al estilo de las cantinas antiguas de la región, por ello también las puertas son de madera y conservan un estilo clásico, en la parte de afuera se colocaron unas mesas con sombrilla para aquellas personas que gusten comer al aire libre y también colocamos unas plantas de decoración. Finalmente se colocó un letrero con el logotipo del restaurante y unas luces decorativas en la parte superior para que la zona quede iluminada durante la noche.</p>
+          </article>
+        </section>
+      </main>
+        <footer>
+         <div>
+           <article class="social">
+            <h2>¡Síguenos en nuestras redes sociales!</h2>
+            <div class="social-icons">
+               <a href="https://www.facebook.com/LaJaibitaTampiqueña" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+               <a href="https://www.instagram.com/lajaibitatampiquena/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+               <a href="https://twitter.com/JaibitaTamp" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+               <a href="https://www.youtube.com/@LaJaibitaTampique%C3%B1a" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+         </article>
+         <article class="boletin">
+            <h2>Suscríbete a nuestro boletín</h2>
+            <p>Recibe las últimas noticias, ofertas especiales y eventos directamente en tu bandeja de entrada. ¡No te pierdas nada de lo que sucede en La Jaibita Tampiqueña!</p>
+            <form action="#" method="post" id="subscribe-form">
+               <input type="email" name="email" id="subscribe-email" placeholder="Ingresa tu correo electrónico" required autocomplete="email">
+               <button type="submit" id="subscribe-button">Subscribirse</button>
+               <span id="subscribe-message"></span>
+            </form>
+         </article>
+         </div>
+         <article class="hours">
+            <h2><i class="fa-solid fa-calendar-days"></i> Horario de servicio</h2>
+            <p>Martes a Sábado: 9:00 AM - 10:00 PM</p>
+            <p>Domingo: 12:00 PM - 8:00 PM</p>
+         </article>
+         <article class="links">
+            <a href="#">Terminos de uso</a>
+            <a href="#">Política de privacidad</a>
+            <a href="#">Accesibilidad web</a>
+            <a href="#">Tus opciones de privacidad</a>
+         </article>
+         <p>&copy; 2026 La Jaibita Tampiqueña. Todos los derechos reservados.</p>
+      </footer>
+    </div>
+ </body>
+</html>

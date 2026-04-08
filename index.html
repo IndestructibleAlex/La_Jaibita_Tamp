@@ -11,7 +11,7 @@
     <title>La Jaibita Tampiqueña</title>
     <link rel="shortcut icon" href="Img/Icono_web_2.svg" type="image/x-svg+xml" sizes="32x32">
     <link rel="stylesheet" href="Css/style.css">
-    <script src="Js/script.js"></script>
+    <script src="Js/script.js" defer></script>
     <script src="https://kit.fontawesome.com/5277fc70e3.js" crossorigin="anonymous"></script>
  </head>
  <body>
@@ -19,21 +19,23 @@
       <header>
          <img src="Img/Isotipo-flat.png" alt="Isotipo" id="isotipo">
          <img src="Img/Logo.png"" alt="logotipo" id="logo">
-         <nav>
+         <nav id="menuList">
            <a href="#" class="active-link">Inicio</a>
            <a href="about.html">Nosotros</a>
            <a href="menu.html">Menu</a>
            <a href="contact.html">Contacto</a>
+           <button type="button" id="btn_subscribe">Subscribirse</button>
          </nav>
-         <button type="button" id="btn_subscribe">Subscribirse</button>
+         <div class="menu-icon"><i class="fa-solid fa-bars" onclick="toggle_menu()"></i></div>
       </header>
       <main>
+         <button class="back-button"><a href="#"><i class="fa-solid fa-chevron-up"></i></a></button>
          <section class="hero">
             <article>
               <h2 id="hero-title">La Jaibita Tampiqueña</h2>
               <p>El restaurante de mariscos más tradicional de Tampico, conocido por su auténtica cocina regional y su ambiente acogedor. Tenemos deliciosos mariscos preparados con los ingredientes más frescos y la mejor calidad.</p>
-              <button type="button" class="btn_hero" id="btn_menu"><a href="Pages/menu.html">Ver menú</a></button>
-              <button type="button" class="btn_hero" id="btn_reserve"><a href="Pages/contact.html">Reservar</a></button>
+              <button type="button" class="btn_hero" id="btn_menu"><a href="menu.html">Ver menú</a></button>
+              <button type="button" class="btn_hero" id="btn_reserve"><a href="contact.html">Reservar</a></button>
             </article>
          </section>
          <section class="fleetback">
@@ -50,6 +52,7 @@
             <img src="Img/feedback_img.png" alt="Feedback image">
          </section>
          <section class="especialities">
+            <h2>Especialidades</h2>
             <div class="card-container">
                <div class="card">
                   <img src="Img/plate-1.jpg" alt="Card-1">
@@ -58,7 +61,7 @@
                     <h4>Manjares de la casa</h4>
                     <p>Jaibas rellenas con una mezcla de camarones, cebolla y especias, servidas con salsa de tomate y cilantro.</p>
                     <span class="price">$120.00</span>
-                    <button class="add-button"><a href="Pages/contact.html"><i class="fa-solid fa-plus"></i> Pedir</a></button>
+                    <button class="add-button"><a href="contact.html"><i class="fa-solid fa-plus"></i> Pedir</a></button>
                   </div>
                </div>
                <div class="card">
@@ -68,7 +71,7 @@
                     <h4>Manjares de la casa</h4>
                     <p>Preparación consistente en una mezcla de pulpa de jaiba desmenuzada, huevo, pan molido o harina, y sazonadores (ajo, cebolla, perejil, pimiento morrón).</p>
                     <span class="price">$95.00</span>
-                     <button class="add-button"><a href="Pages/contact.html"><i class="fa-solid fa-plus"></i> Pedir</a></button>
+                     <button class="add-button"><a href="contact.html"><i class="fa-solid fa-plus"></i> Pedir</a></button>
                   </div>
                </div>
                <div class="card">
@@ -78,7 +81,7 @@
                     <h4>Manjares de la casa</h4>
                     <p>Camarones empanizados y fritos, servidos con una deliciosa salsa de tomate y cilantro.</p>
                     <span class="price">$115.00</span>
-                     <button class="add-button"><a href="Pages/contact.html"><i class="fa-solid fa-plus"></i> Pedir</a></button>
+                     <button class="add-button"><a href="contact.html"><i class="fa-solid fa-plus"></i> Pedir</a></button>
                   </div>
                </div>
             </div>
@@ -143,7 +146,7 @@
             <article>
                <h2>Acerca de Nosotros</h2>
                <p>En <b>La Jaibita Tampiqueña</b>, nos dedicamos a ofrecer la mejor experiencia culinaria con productos frescos y sabores auténticos de Tampico, buscando favorecer el consumo de mariscos y darle un deleite de paladar tanto a nuestros residentes Tampiqueños como a turistas que nos visitan de vez en cuando.</p>
-               <button class="about-button"><a href="Pages/about.html">Saber más</a></button>
+               <button class="about-button"><a href="about.html">Saber más</a></button>
             </article>
             <img src="Img/ostiones.png" alt="imagen sobre nosotros">
          </section>

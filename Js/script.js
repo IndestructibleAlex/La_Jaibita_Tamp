@@ -1,18 +1,62 @@
-const button = document.getElementById('send-button');
-const username = document.getElementById('name');
-const email = document.getElementById('email');
-const phone = document.getElementById('phone');
-const message = document.getElementById('message');
-var formMessage = document.getElementById('form-message');
+let menubar = document.getElementById("menuList")
+menubar.style.maxHeight = "0px";
 
-button.addEventListener('click', function(event) {
-    if (username.value.trim() === '' || email.value.trim() === '' || phone.value.trim() === '' || message.value.trim() === '') {
-        alert('Por favor, completa todos los campos antes de enviar el formulario.');
-    } else {
-        formMessage.textContent = '¡Gracias por tu mensaje! Nos pondremos en contacto contigo pronto.';
-        username.value = '';
-        email.value = '';
-        phone.value = '';
-        message.value = '';
+function toggle_menu(){
+    if(menubar.style.maxHeight == "0px")
+    {
+        menubar.style.maxHeight = "320px";
     }
-});
+    else{
+        menubar.style.maxHeight = "0px";
+    }
+
+}
+
+function show_details_1(){
+    let detail = document.getElementById("info1");
+    let photo2 = document.getElementById("photo2");
+    let photo3 = document.getElementById("photo3");
+    if(detail.open){
+        detail.open = false;
+        detail.style.display = "none";
+        photo2.style.display = "block";
+        photo3.style.display = "block";
+    }else{
+        detail.style.display = "block";
+        detail.open = true; 
+        photo2.style.display = "none";
+        photo3.style.display = "none";
+    }
+}
+function show_details_2(){
+    let detail = document.getElementById("info2");
+    let photo1 = document.getElementById("photo1");
+    let photo3 = document.getElementById("photo3");
+    if(detail.open){
+        detail.open = false;
+        detail.style.display = "none";
+        photo1.style.display = "block";
+        photo3.style.display = "block";
+    }else{
+        detail.style.display = "block";
+        detail.open = true; 
+        photo1.style.display = "none";
+        photo3.style.display = "none";
+    }
+}
+function show_details_3(){
+    let detail = document.getElementById("info3");
+    let photo1 = document.getElementById("photo1");
+    let photo3 = document.getElementById("photo2");
+    if(detail.open){
+        detail.open = false;
+        detail.style.display = "none";
+        photo1.style.display = "block";
+        photo2.style.display = "block";
+    }else{
+        detail.style.display = "block";
+        detail.open = true; 
+        photo1.style.display = "none";
+        photo2.style.display = "none";
+    }
+}
