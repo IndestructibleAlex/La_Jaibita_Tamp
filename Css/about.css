@@ -110,8 +110,9 @@ h3{
     line-height: 1.6;
 }
 .about-cards{
-    display: inline-flex;
-    flex-wrap: nowrap;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -161,15 +162,34 @@ h3{
     min-width: 500px;
     width: 50%;
 }
+.about-culture p{
+    margin-bottom: 10px;
+}
 details{
     display: none;
     max-width: 50%;
     transition: all 0.5s ease-in-out;
 }
-@media (max-width: 767px){
-    h1{
-        transform: translateY(-5px);
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .imagen-fondo{
+        height: 50vh;
     }
+    .about-culture{
+        flex-direction: column-reverse;
+    }
+    .about-culture div{
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .about-culture div img{
+        max-width: 40%;
+    }
+    .about-food p, .about-story p{
+        max-width: 80%;
+    }
+}
+@media screen and (max-width: 767px){
     .vector-1{
         transform: translateY(-5px);
     }

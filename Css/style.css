@@ -209,9 +209,10 @@ nav a:hover::after{
 }
 .card-container{
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    gap: 20px;
     margin-top: 40px;
     margin-bottom: 40px;
 }
@@ -319,6 +320,8 @@ nav a:hover::after{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
     margin: 50px;
     margin-top: 120px;
 }
@@ -473,14 +476,16 @@ nav a:hover::after{
 }
 .contact-block form input{
     width: 100%;
+    border: 3px solid var(--primary-color);
 }
 .contact-block form textarea{
     width: 100%;
     height: 150px;
+    border: 3px solid var(--primary-color);
     resize: none;
 }
 .controls td{
-    padding: 10px;
+    padding: 6px;
 }
 #send-button{
     background-color: var(--primary-color);
@@ -585,7 +590,39 @@ footer div article{
 .links a{
     margin: 10px;
 }
-@media (max-width: 768px){
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    *{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .hero{
+        min-height: 400px;
+        background-size: 200%;
+        background-position: left;
+        flex-direction: column;
+        align-items: left;
+        justify-content: space-around;
+    }
+    .card{
+        margin: 30px;
+    }
+    .about article{
+        width: 45%;
+    }
+    .menu-preview .menu-section{
+        max-width: 40%;
+    }
+    .contact{
+        flex-direction: column;
+    }
+    .contact-block{
+        min-width: 60%;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 830px){
     *{
         margin-left: 0;
         margin-right: 0;
@@ -630,7 +667,7 @@ footer div article{
         margin: 10px;
         margin-left: 30px;
         animation: none;
-        width: 90%;
+        max-width: 70%;
     }
     .hero article p{
         font-size: 14px;
@@ -642,7 +679,7 @@ footer div article{
         flex-direction: column;
     }
     .fleetback article{
-        max-width: 80%;
+        max-width: 90%;
     }
     .fleetback img{
         height: auto;
