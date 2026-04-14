@@ -66,11 +66,34 @@ body{
 }
 #isotipo{
     height: 70px;
+    animation: appear-iso 1s ease-in-out;
+}
+@keyframes appear-iso{
+    from{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0px);
+        opacity: 1;
+    }
 }
 #logo{
     height: 50px;
     align-self: center;
+    animation: appear-logo 1s ease-in-out;
 }
+@keyframes appear-logo{
+    from{
+        opacity: 0;
+        filter: blur(10px);
+    }
+    to{
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+
 a{
     text-decoration: none;
     color: var(--secondary-color);

@@ -1,5 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap');
+:root{
+    --primary-color: #1067f4;
+    --primary-color-2: #053583;
+    --secondary-color: #e7e6e6;
+    --third-color: #0e0d11;
+    --text-color: #1f1f1f;
+    --text-color-2: #323232;
+    --text-color-dark: #d3d3d3;
+    --text-body-font: "Bookman Old Style", sans-serif;
+    --text-title-font: Georgia, 'Times New Roman', Times, serif;
+}
 main{
-    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    min-height: 100vh;  
+}
+#title{
+    margin-top: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--text-color-2);
+    font-size: 30px;
+    text-transform: uppercase;
+}
+#subtitle{
+    text-transform: uppercase;
+    color: var(--primary-color-2);
+}
+main div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5px;
+}
+main div i{
+    color: var(--primary-color);
+}
+#description{
+    margin-top: 40px;
+    max-width: 60%;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.menu-links{
+    background-color: #1067f4;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+.menu-section{
+    width: 80%;
+    margin-top: 40px;
+}
+.menu-section h2{
+    text-align: start;
+    font-size: 20px;
+    margin-left: 50px;
+}
+.plate-container{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.plate{
+    width: 200px;
+    height: 360px;
+}
+.plate img{
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+}
+.plate img:hover{
+    transform: scale(1.15);
+}
+.plate h2{
+    text-align: left;
+}
+#menu-drinks{
+    width: 100%;
+    background-color: var(--third-color);
+    color: lightgray;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 120px;
+}
+.publicidad{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+#vasos{
+    width: 300px;
+    border-radius: 20px;
+}
+.publicidad article{
+    max-width: 30%;
+    font-size: 1.2rem;
+}
+.publicidad article h3{
+    color: var(--primary-color);
+    transition: all 2s ease-in-out;
+    animation: zoom 2s infinite alternate;
+    font-size: 30px;
+}
+@keyframes zoom{
+    from{
+        text-shadow: none;
+        transform: translateX(0);
+    }
+    to{
+        text-shadow: 2px 2px 3px black;
+        transform: translateX(50px);
+    }
+}
+#menu-drinks p{
+    color: lightgray;
+}
+.vector3{
+    margin-top: 20px;
+}
+.vector4{
+    transform: translateY(5px);
+    z-index: 1000;
+}
+#menu-kids{
+    width: 100%;
+    background-color: var(--primary-color);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#menu-kids h1{
+    font-family: "DynaPuff", system-ui;
+    font-size: 60px;
+    letter-spacing: 3px;
+}
+#menu-kids p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    margin-bottom: 40px;
 }

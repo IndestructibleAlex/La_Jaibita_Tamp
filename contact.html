@@ -46,12 +46,13 @@
                 <label for="txt_last_name">Apellidos*: </label>
                 <input type="text" name="txt_last_name" id="txt_last_name" required>
                 <label for="txt_email">Correo*: </label>
-                <input type="email" name="txt_email" id="txt_email" required>
+                <input type="email" name="txt_email" id="txt_email" required autocomplete>
                 <label for="txt_tel">Teléfono*: </label>
-                <input type="tel" name="txt_tel" id="txt_tel" required>
-                <label>Pregunta*: </label>
+                <input type="tel" name="txt_tel" id="txt_tel" required autocomplete>
+                <label for="txt_question">Pregunta*: </label>
                 <textarea name="txt_question" id="txt_question" required></textarea>
-                <input type="submit" value="Enviar" id="btn_send">
+                <input type="button" value="Enviar" id="btn_send" onclick="send()">
+                <span id="texto_para_form"></span>
             </form>
          </article>
          <div id="img-aside"></div>
@@ -59,6 +60,46 @@
         <section class="contact-map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d230.85572611357307!2d-97.85453250316989!3d22.21382290956759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d7f79701b26947%3A0xde41285c487cf56!2s1829%20Hotel%20Restaurante-Bar!5e0!3m2!1ses-419!2smx!4v1775108934919!5m2!1ses-419!2smx" width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
+        <section class="reservations">
+         <h2>Reserva con nosotros</h2>
+         <article>
+            <form action="#" name="frm_reservation" id="frm_reservation">
+               <div class="div1">
+                 <h3>Fecha</h3>
+                 <input type="date" name="date-reserv" id="date-reserv">
+               </div>
+               <div class="div2">
+                  <h3>Personas</h3>
+                  <select name="sel-person" id="sel-person" disabled>
+                     <option value="1">1 Persona</option>
+                     <option value="2">2 Personas</option>
+                     <option value="3">3 Personas</option>
+                     <option value="4">4 Personas</option>
+                  </select>      
+               </div>
+               <div class="div3">
+                 <h3>Hora</h3>
+                 <input type="time" name="hour" id="hour-set" disabled>
+               </div>
+               <div class="div4">
+                 <button type="button" id="btn_reservar" onclick="reserve()" disabled>Reservar</button>
+               </div>
+               <div class="div5">
+                 <p>Si no encuentra disponibilidad, apúntese en la lista de espera</p>
+                 <button type="button" id="btn_wait">Lista de espera</button>
+               </div>
+            </form>
+         </article>
+        </section>
+        <article id="reservation-dialog">
+         <article>
+            <h2>Reseva hecha <i class="fa-solid fa-thumbs-up"></i></h2>
+            <p>Tu reservación ha sido realizada para el día: <span id="date-day"></span></p>
+            <p>En horario de <span id="date-hour"></span>, para <span id="date-members"></span> persona/as</p>
+            <button type="button" id="btn_close_dialog" onclick="close_dialog()">Cerrar</button>
+         </article>
+         <img src="Img/Jaiba_soporte.png" alt="jaibita soporte">
+        </article>
       </main>
         <footer>
          <div>

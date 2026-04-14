@@ -68,7 +68,7 @@ i{
 }
 .contact-form article{
     width: 45%;
-    height: 80%;
+    height: 85%;
     background-color: white;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -105,7 +105,7 @@ i{
     margin: 40px;
     font-size: 16px;
 }
-input, textarea{
+#frm-contacto input, textarea{
     outline: none;
     width: 100%;
     border: 2px solid var(--primary-color);
@@ -146,6 +146,97 @@ iframe{
     width: 80%;
     height: 500px;
     margin: 0 auto;
+}
+.reservations h2{
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-align: center;
+}
+.reservations article{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+#frm_reservation{
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 600px;
+    margin: 30px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap:30px;
+    grid-row-gap: 15px;
+}
+.div1 { grid-area: 1 / 1 / 2 / 6; }
+.div2 { grid-area: 2 / 1 / 3 / 3; }
+.div3 { grid-area: 2 / 3 / 3 / 5; }
+.div4 { grid-area: 3 / 1 / 4 / 5; }
+.div5 { grid-area: 4 / 1 / 5 / 5; }
+#frm_reservation input, select{
+    border: 2px solid lightgray;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+}
+#frm_reservation input:focus{
+    border: 3px solid var(--primary-color);
+    outline: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+#frm_reservation select:focus{
+    border: 3px solid var(--primary-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+#frm_reservation button, #btn_close_dialog{
+    width: 100%;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 0;
+    margin-top: 10px;
+    transition: all 0.3s ease-in-out;
+}
+#frm_reservation button:hover, #btn_close_dialog:hover{
+    background-color: #073682;
+}
+#frm_reservation h3{
+    margin-bottom: 10px;
+}
+#reservation-dialog{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 80%;
+    width: 750px;
+    height: 450px;
+    padding: 10px;
+    background-color: rgb(241, 240, 240);
+    box-shadow: 5px 8px 10px rgba(19, 19, 19, 0.849);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    display: none;
+    opacity: 0;
+    transition: all 2.5s ease-in-out;
+}
+#reservation-dialog img{
+    width: 300px;
+    height: auto;
+}
+#reservation-dialog p{ font-size: 16px; }
+#reservation-dialog button{ margin-top: 40px; }
+#reservation-dialog h2{
+    font-size: 30px;
+    margin-bottom: 10px;
 }
 @media screen and (max-width: 767px){
     .contact-intro article{

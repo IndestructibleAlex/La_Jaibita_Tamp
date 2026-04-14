@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +13,7 @@
     <link rel="shortcut icon" href="Img/Icono_web_2.svg" type="image/x-svg+xml" sizes="32x32">
     <link rel="stylesheet" href="Css/style.css">
     <link rel="stylesheet" href="Css/menu.css">
-    <script src="Js/script.js"></script>
+    <script src="Js/script.js" defer></script>
     <script src="https://kit.fontawesome.com/5277fc70e3.js" crossorigin="anonymous"></script>
  </head>
  <body>
@@ -21,16 +21,492 @@
         <header>
          <a href="index.html"><img src="Img/Isotipo-flat.png" alt="Isotipo" id="isotipo"></a>
          <img src="Img/Logo.png"" alt="logotipo" id="logo">
-         <nav>
+         <nav id="menuList">
            <a href="index.html">Inicio</a>
            <a href="about.html">Nosotros</a>
            <a href="#" class="active-link">Menu</a>
            <a href="contact.html">Contacto</a>
+           <button type="button" id="btn_subscribe">Subscribirse</button>
          </nav>
-         <button type="button" id="btn_subscribe">Subscribirse</button>
+         <div class="menu-icon"><i class="fa-solid fa-bars" onclick="toggle_menu()"></i></div>
       </header>
       <main>
-
+         <button class="back-button"><a href="#"><i class="fa-solid fa-chevron-up"></i></a></button>
+         <h1 id="title">Menú</h1>
+         <h2 id="subtitle">La Jaibita Tampiqueña</h2>
+         <div><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i></div>
+         <p id="description">Diversión, variedad, calidad y frescura inmediata.<br> Redescubriendo la identidad culinaria de Tampico. Escoge el que más se te antoje y disfrútalo.¡Prueba de todos y presúmenos tu torre de platos!</p>
+         <div>
+            <a class="menu-links" href="#drinks">Ver bebidas</a>
+            <a class="menu-links" href="#kids">Ver menu kids</a>
+         </div>
+         <section class="menu-section" id="menu-entries">
+          <h2><i class="fa-solid fa-bowl-rice"></i> Entradas</h2>
+          <article class="plate-container">
+            <article class="plate">
+               <img src="Img/Plates/entrada-1.jpg" alt="platillo">
+               <hr>
+               <h2 class="plate-name">Salpicón variado</h2>
+               <p class="plate-description">Tenemos los deliciosos guisos de raya, cazón, pescado y jaiba.</p>
+            </article>
+            <article class="plate">
+               <img src="Img/Plates/entrada-2.jpg" alt="platillo">
+               <hr>
+               <h2 class="plate-name">Coctel de Camarón</h2>
+               <p class="plate-description">Preparado con camarones, catsup, Clamato o jugo de naranja, jitomate, cebolla y aguacate.</p>
+            </article>
+            <article class="plate">
+               <img src="Img/Plates/entrada-3.jpg" alt="platillo">
+               <hr>
+               <h2 class="plate-name">Camarones envueltos con tocino</h2>
+               <p class="plate-description">Camarones grandes envueltos en rebanadas de tocino. Horneados, a la parrilla o fritos.</p>
+            </article>
+            <article class="plate">
+               <img src="Img/Plates/entrada-4.jpg" alt="platillo">
+               <hr>
+               <h2 class="plate-name">Brochetas de Camarón</h2>
+               <p class="plate-description">Camarones marinados con pimientos y cebolla, con un sabor ahumado, cítrico o especiado.</p>
+            </article>
+            <article class="plate">
+               <img src="Img/Plates/entrada-5.jpg" alt="platillo">
+               <hr>
+               <h2 class="plate-name">Aguachile</h2>
+               <p class="plate-description">Camarones crudos, marinados al momento en jugo de limón, chiles, pepino y cebolla morada.</p>
+            </article>
+            <article class="plate">
+               <img src="Img/Plates/entrada-6.jpg" alt="platillo">
+               <hr>
+               <h2 class="plate-name">Chicharrón de pulpo</h2>
+               <p class="plate-description">Tentáculos de pulpo cocidos y fritos con textura crujiente por fuera y suave por dentro.</p>
+            </article>
+            <article class="plate">
+               <img src="Img/Plates/entrada-7.jpg" alt="platillo">
+               <hr>
+               <h2 class="plate-name">Ceviche</h2>
+               <p class="plate-description">Mariscos crudos marinados en jugo cítrico (limón o lima), sal, cebolla y ají. Acompañado de galletas saladas.</p>
+            </article>
+            <article class="plate">
+               <img src="Img/Plates/entrada-8.jpg" alt="platillo">
+               <hr>
+               <h2 class="plate-name">Tostadas de mariscos</h2>
+               <p class="plate-description">Cubiertas con mariscos mixtos (camarón, pulpo, jaiba, ceviche) marinados en limón, especias y vegetales.</p>
+            </article>
+          </article>
+         </section>
+         <section class="menu-section" id="menu-especialities">
+            <h2><i class="fa-solid fa-shrimp"></i> Especialidades</h2>
+            <article class="plate-container">
+            <article class="plate">
+               <img src="Img/Special/es-1.jpg" alt="platillo">
+               <hr>
+               <h2 class="plate-name">Jaibas Rellenas</h2>
+               <p class="plate-description">Caparazones de jaiba rellenos con un guiso de su propia pulpa, sazonado con tomate, cebolla, ajo, chile y especias.</p>
+            </article>
+            <article class="plate">
+               <img src="Img/Special/es-2.jpg" alt="platillo">
+               <hr>
+               <h2 class="plate-name">Jaiba a la Frank</h2>
+               <p class="plate-description">Pulpa de jaiba preparada con una salsa cremosa y especiada, acompañada de tortillas de queso.</p>
+            </article>
+            <article class="plate">
+               <img src="Img/Special/es-3.webp" alt="platillo">
+               <hr>
+               <h2 class="plate-name">Tortas de Jaiba</h2>
+               <p class="plate-description">Tortitas planas y doradas hechas de pulpa de jaiba fresca desmenuzada, con ensalada y arroz.</p>
+            </article>
+            <article class="plate">
+               <img src="Img/Special/es-4.jpg" alt="platillo">
+               <hr>
+               <h2 class="plate-name">Camarones al coco</h2>
+               <p class="plate-description">Camarones frescos empanizados en una mezcla crujiente de coco rallado, fritos hasta obtener un tono dorado.</p>
+            </article>
+            <article class="plate">
+               <img src="Img/Special/es-5.jpg" alt="platillo">
+               <hr>
+               <h2 class="plate-name">Tostadas de ceviche mixto</h2>
+               <p class="plate-description">Mariscos crudos (pescado, camarón o mixtos) marinados en jugo de limón, mezclados con jitomate, cebolla, cilantro, chile en tostada.</p>
+            </article>
+            <article class="plate">
+               <img src="Img/Special/es-6.jpg" alt="platillo">
+               <hr>
+               <h2 class="plate-name">Ensalada de atún</h2>
+               <p class="plate-description">Muy versátil, nutritivo y refrescante que combina atún con verduras frescas como apio, cebolla, tomate y pepino.</p>
+            </article>
+            <article class="plate">
+               <img src="Img/Special/es-7.jpg" alt="platillo">
+               <hr>
+               <h2 class="plate-name">Ostiones preparados</h2>
+               <p class="plate-description">Ostiones frescos en su concha cubiertos con una mezcla de salsas negras, jugo de limón, clamato, cebolla, cilantro y chile.</p>
+            </article>
+          </article>
+         </section>
+         <section class="menu-section" id="menu-plates">
+            <h2><i class="fa-solid fa-fish"></i> Plato Fuerte</h2>
+            <article class="plate-container">
+            <article class="plate">
+               <img src="Img/camarones.webp" alt="platillo">
+               <hr>
+               <h2 class="plate-name">Camarones a la diabla</h2>
+               <p class="plate-description">Camarones cocinados en una salsa roja intensa, espesa y muy picante. Elaborada con una mezcla de chiles secos.</p>
+            </article>
+            <article class="plate">
+               <img src="Img/Strong/strong-2.jpg" alt="platillo">
+               <hr>
+               <h2 class="plate-name">Camarones al mojo de ajo</h2>
+               <p class="plate-description">Camarones jugosos salteados en una abundante salsa de ajo, mantequilla y aceite de oliva.</p>
+            </article>
+            <article class="plate">
+               <img src="Img/Strong/strong-3.jpg" alt="platillo">
+               <hr>
+               <h2 class="plate-name">Camarones a la mariposa</h2>
+               <p class="plate-description">Cortados especialmente, con una pasta de cerveza, fritos y crujientes por fuera, suave por dentro.</p>
+            </article>
+            <article class="plate">
+               <img src="Img/Strong/strong-4.jpg" alt="platillo">
+               <hr>
+               <h2 class="plate-name">Rollo de mariscos</h2>
+               <p class="plate-description">Mezcla cremosa de langosta, camarón, cangrejo servida en forma de filetes de pescado enrollados y rellenos.</p>
+            </article>
+            <article class="plate">
+               <img src="Img/Strong/strong-5.avif" alt="platillo">
+               <hr>
+               <h2 class="plate-name">Pescado empapelado</h2>
+               <p class="plate-description">Filetes de pescado (tilapia o trucha) cocinados al vapor dentro de un paquete de aluminio o papel encerado.</p>
+            </article>
+            <article class="plate">
+               <img src="Img/Strong/strong-6.jpg" alt="platillo">
+               <hr>
+               <h2 class="plate-name">Filete de pescado</h2>
+               <p class="plate-description">Delicioso y preparado a la plancha, empanizado/frito o al ajillo. Servido con ensalada y arroz.</p>
+            </article>
+            <article class="plate">
+               <img src="Img/Strong/strong-7.jpg" alt="platillo">
+               <hr>
+               <h2 class="plate-name">Pescado frito</h2>
+               <p class="plate-description">Mojarras fritas sazonadas con sal, limón y ajo, acompañadas de ensalada, guacamole y arroz.</p>
+            </article>
+          </article>
+         </section>
+         <section class="menu-section" id="menu-soups">
+            <h2><i class="fa-solid fa-bowl-food"></i> Sopas y caldos</h2>
+            <article class="plate-container">
+            <article class="plate">
+               <img src="Img/Soups/soup-1.jpg" alt="platillo">
+               <hr>
+               <h2 class="plate-name">Sopa de camarón</h2>
+               <p class="plate-description">Hecho con camarones frescos, verduras como papas y zanahorias, y suele acompañado con limón, cilantro y arroz.</p>
+            </article>
+            <article class="plate">
+               <img src="Img/Soups/soup-2.webp" alt="platillo">
+               <hr>
+               <h2 class="plate-name">Caldo de Jaiba</h2>
+               <p class="plate-description">Manjar de jaibas frescas en caldito a base de ajo, cebolla, tomate y chiles, acompañado de arroz y salsas.</p>
+            </article>
+            <article class="plate">
+               <img src="Img/Soups/soup-3.jpg" alt="platillo">
+               <hr>
+               <h2 class="plate-name">Caldo de pescado</h2>
+               <p class="plate-description">Caldito elaborado con rape y huachinango enriquecido con tomate, ajo, hierbas y acompañado de arroz.</p>
+            </article>
+            <article class="plate">
+               <img src="Img/Soups/soup-4.avif" alt="platillo">
+               <hr>
+               <h2 class="plate-name">Sopa de siete mares</h2>
+               <p class="plate-description">Incluye siete tipos de productos del mar como camarón, pescado, pulpo, calamar, almejas, mejillones y jaiba.</p>
+            </article>
+          </article>
+         </section>
+         <svg class="vector3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0e0d11" fill-opacity="1" d="M0,192L0,128L46.5,128L46.5,0L92.9,0L92.9,96L139.4,96L139.4,224L185.8,224L185.8,160L232.3,160L232.3,192L278.7,192L278.7,160L325.2,160L325.2,128L371.6,128L371.6,256L418.1,256L418.1,160L464.5,160L464.5,288L511,288L511,192L557.4,192L557.4,320L603.9,320L603.9,288L650.3,288L650.3,288L696.8,288L696.8,256L743.2,256L743.2,32L789.7,32L789.7,224L836.1,224L836.1,256L882.6,256L882.6,32L929,32L929,256L975.5,256L975.5,64L1021.9,64L1021.9,0L1068.4,0L1068.4,192L1114.8,192L1114.8,288L1161.3,288L1161.3,64L1207.7,64L1207.7,96L1254.2,96L1254.2,320L1300.6,320L1300.6,96L1347.1,96L1347.1,96L1393.5,96L1393.5,192L1440,192L1440,320L1393.5,320L1393.5,320L1347.1,320L1347.1,320L1300.6,320L1300.6,320L1254.2,320L1254.2,320L1207.7,320L1207.7,320L1161.3,320L1161.3,320L1114.8,320L1114.8,320L1068.4,320L1068.4,320L1021.9,320L1021.9,320L975.5,320L975.5,320L929,320L929,320L882.6,320L882.6,320L836.1,320L836.1,320L789.7,320L789.7,320L743.2,320L743.2,320L696.8,320L696.8,320L650.3,320L650.3,320L603.9,320L603.9,320L557.4,320L557.4,320L511,320L511,320L464.5,320L464.5,320L418.1,320L418.1,320L371.6,320L371.6,320L325.2,320L325.2,320L278.7,320L278.7,320L232.3,320L232.3,320L185.8,320L185.8,320L139.4,320L139.4,320L92.9,320L92.9,320L46.5,320L46.5,320L0,320L0,320Z"></path></svg>
+         <section name="drinks" id="menu-drinks">
+            <a name="drinks"></a>
+            <h1>Menú de bebidas</h1>
+            <div class="publicidad">
+               <img id="vasos" src="Img/Drinks/vasos.png" alt="vasos">
+               <article>
+                  <h3>Oferta especial</h3>
+                  <p>Si compras el vaso oficial de nuestro restaurante puedes traerlo en tu proxima visita para servirte ahi tu bebida, y como recompensa te haremos un 25% de descuento en tu bebida.<br> *Sólo aplica para las aguas frescas y bebidas preparadas.</p>
+               </article>
+            </div>
+            <section class="menu-section" id="menu-drinks-sodas">
+               <h2><i class="fa-solid fa-bottle-water"></i> Refrescos</h2>
+               <article class="plate-container">
+                  <article class="plate">
+                     <img src="Img/Drinks/soda-1.png" alt="platillo">
+                     <hr>
+                     <h2 class="plate-name">Coca Cola</h2>
+                     <p class="plate-description">Refresco en botella de vidrio retornable de 500ml.</p>
+                  </article>
+                  <article class="plate">
+                     <img src="Img/Drinks/soda-2.png" alt="platillo">
+                     <hr>
+                     <h2 class="plate-name">Coca sin azúcar</h2>
+                     <p class="plate-description">Refresco sin azúcar en botella de vidrio retornable de 500ml.</p>
+                  </article>
+                  <article class="plate">
+                     <img src="Img/Drinks/soda-3.png" alt="platillo">
+                     <hr>
+                     <h2 class="plate-name">Escuis de Sabor</h2>
+                     <p class="plate-description">En botella retornable de 500ml. De fresa, manzana, toronja y piña.</p>
+                  </article>
+                  <article class="plate">
+                     <img src="Img/Drinks/soda-4.png" alt="platillo">
+                     <hr>
+                     <h2 class="plate-name">Sprite</h2>
+                     <p class="plate-description">Refresco sabor Toronja. En botella desechable de 600ml.</p>
+                  </article>
+                  <article class="plate">
+                     <img src="Img/Drinks/soda-5.png" alt="platillo">
+                     <hr>
+                     <h2 class="plate-name">Fanta</h2>
+                     <p class="plate-description">Refresco sabor Mandarina. En botella desechable de 600ml.</p>
+                  </article>
+                  <article class="plate">
+                     <img src="Img/Drinks/soda-6.png" alt="platillo">
+                     <hr>
+                     <h2 class="plate-name">Sidral Mundet</h2>
+                     <p class="plate-description">Refresco sabor Manzana. En botella desechable de 600ml.</p>
+                  </article>
+                  <article class="plate">
+                     <img src="Img/Drinks/soda-7.png" alt="platillo">
+                     <hr>
+                     <h2 class="plate-name">Escuis de Hierro</h2>
+                     <p class="plate-description">El más tampiqueño. En botella desechable de 600ml.</p>
+                  </article>
+             </article>
+            </section>
+            <section class="menu-section" id="menu-drinks-fresh">
+               <h2><i class="fa-solid fa-lemon"></i> Aguas Frescas</h2>
+               <article class="plate-container">
+                  <article class="plate">
+                     <img src="Img/Drinks/water-1.png" alt="platillo">
+                     <hr>
+                     <h2 class="plate-name">Pepino con limón</h2>
+                     <p class="plate-description">Deliciosa agua fresca casera sabor pepino-limón.</p>
+                  </article>
+                  <article class="plate">
+                     <img src="Img/Drinks/water-2.png" alt="platillo">
+                     <hr>
+                     <h2 class="plate-name">Piña</h2>
+                     <p class="plate-description">Deliciosa agua fresca casera sabor piña.</p>
+                  </article>
+                  <article class="plate">
+                     <img src="Img/Drinks/water-3.png" alt="platillo">
+                     <hr>
+                     <h2 class="plate-name">Horchata</h2>
+                     <p class="plate-description">Deliciosa agua fresca casera sabor horchata.</p>
+                  </article>
+                  <article class="plate">
+                     <img src="Img/Drinks/water-4.png" alt="platillo">
+                     <hr>
+                     <h2 class="plate-name">Jamaica</h2>
+                     <p class="plate-description">Deliciosa agua fresca casera sabor jamaica.</p>
+                  </article>
+                  <article class="plate">
+                     <img src="Img/Drinks/water-5.png" alt="platillo">
+                     <hr>
+                     <h2 class="plate-name">Tamarindo</h2>
+                     <p class="plate-description">Deliciosa agua fresca casera sabor tamarindo.</p>
+                  </article>
+                  <article class="plate">
+                     <img src="Img/Drinks/water-6.webp" alt="platillo">
+                     <hr>
+                     <h2 class="plate-name">Limón</h2>
+                     <p class="plate-description">Deliciosa agua fresca casera sabor limón.</p>
+                  </article>
+                  <article class="plate">
+                     <img src="Img/Drinks/water-7.png" alt="platillo">
+                     <hr>
+                     <h2 class="plate-name">Jobito</h2>
+                     <p class="plate-description">Deliciosa agua fresca casera sabor jobito.</p>
+                  </article>
+                  <article class="plate">
+                     <img src="Img/Drinks/water-8.jpg" alt="platillo">
+                     <hr>
+                     <h2 class="plate-name">Tepache</h2>
+                     <p class="plate-description">Deliciosa agua fresca casera sabor tepache.</p>
+                  </article>
+             </article>
+            </section>
+            <section class="menu-section" id="menu-drinks-prep">
+               <h2><i class="fa-solid fa-whiskey-glass"></i> Bebidas preparadas</h2>
+               <article class="plate-container">
+                  <article class="plate">
+                     <img src="Img/Drinks/prep-1.jpg" alt="platillo">
+                     <hr>
+                     <h2 class="plate-name">Limonada</h2>
+                     <p class="plate-description">Bebida a base de zumo de limón, agua y endulzante, servida fría y con hielo.</p>
+                  </article>
+                  <article class="plate">
+                     <img src="Img/Drinks/prep-2.jpg" alt="platillo">
+                     <hr>
+                     <h2 class="plate-name">Naranjada</h2>
+                     <p class="plate-description">Bebida a base de zumo de naranja, agua y algo de limón, servida fría y con hielo.</p>
+                  </article>
+                  <article class="plate">
+                     <img src="Img/Drinks/prep-3.jpg" alt="platillo">
+                     <hr>
+                     <h2 class="plate-name">Limonada Rosa</h2>
+                     <p class="plate-description">Bebida a base de zumo de limón, fresa, agua y endulzante, servida fría y con hielo.</p>
+                  </article>
+             </article>
+            </section>
+            <section class="menu-section" id="menu-drinks-wines">
+               <h2><i class="fa-solid fa-martini-glass-citrus"></i> Bebidas Alcohólicas</h2>
+               <article class="plate-container">
+                  <article class="plate">
+                     <img src="Img/Drinks/alc-1.jpg" alt="platillo">
+                     <hr>
+                     <h2 class="plate-name">Michelada</h2>
+                     <p class="plate-description">Cerveza con jugo de limón, sal y una mezcla de salsas (inglesa, Maggi, picante) escarchada con chile en polvo (como Tajín) o sal.</p>
+                  </article>
+                  <article class="plate">
+                     <img src="Img/Drinks/alc-2.jpg" alt="platillo">
+                     <hr>
+                     <h2 class="plate-name">Margarita</h2>
+                     <p class="plate-description">Tequila, licor de naranja y jugo de lima o limón fresco. Servida en una copa escarchada con sal.Frozen o sin hielo.</p>
+                  </article>
+                  <article class="plate">
+                     <img src="Img/Drinks/alc-3.jpg" alt="platillo">
+                     <hr>
+                     <h2 class="plate-name">Paloma</h2>
+                     <p class="plate-description">Tequila, refresco de toronja, jugo de lima y una pizca de sal, servido en un vaso alto con hielo y escarchado con sal.</p>
+                  </article>
+                  <article class="plate">
+                     <img src="Img/Drinks/alc-4.jpg" alt="platillo">
+                     <hr>
+                     <h2 class="plate-name">Vampiro</h2>
+                     <p class="plate-description">Elaborada con tequila blanco o reposado, refresco de toronja, sangrita, jugo de limón y sal.</p>
+                  </article>
+                  <article class="plate">
+                     <img src="Img/Drinks/alc-5.jpg" alt="platillo">
+                     <hr>
+                     <h2 class="plate-name">Piña Colada</h2>
+                     <p class="plate-description">Hecha con blanco, crema de coco y jugo de piña, licuados con hielo. Decorada con una rodaja de piña.</p>
+                  </article>
+                  <article class="plate">
+                     <img src="Img/Drinks/alc-6.jpg" alt="platillo">
+                     <hr>
+                     <h2 class="plate-name">Fresada</h2>
+                     <p class="plate-description">Bebida refrescante y granizada, preparada licuando fresas con hielo, jugo de limón y azúcar, servida con chamoy y tajín.</p>
+                  </article>
+                  <article class="plate">
+                     <img src="Img/Drinks/alc-7.jpg" alt="platillo">
+                     <hr>
+                     <h2 class="plate-name">Mojito</h2>
+                     <p class="plate-description">Elaborado con ron blanco, azúcar, jugo de limón, menta o hierbabuena fresca, hielo picado y agua con gas (soda).</p>
+                  </article>
+             </article>
+            </section>
+            <section class="menu-section" id="menu-drinks-beer">
+               <h2><i class="fa-solid fa-beer-mug-empty"></i> Cervezas</h2>
+               <article class="plate-container">
+                  <article class="plate">
+                     <img src="Img/Drinks/beer1.jpg" alt="platillo">
+                     <hr>
+                     <h2 class="plate-name">Corona</h2>
+                     <p class="plate-description">En sus presentaciones de lata y botella.</p>
+                  </article>
+                  <article class="plate">
+                     <img src="Img/Drinks/beer2.jpg" alt="platillo">
+                     <hr>
+                     <h2 class="plate-name">Victoria</h2>
+                     <p class="plate-description">En sus presentaciones de lata y botella.</p>
+                  </article>
+                  <article class="plate">
+                     <img src="Img/Drinks/beer3.webp" alt="platillo">
+                     <hr>
+                     <h2 class="plate-name">Modelo</h2>
+                     <p class="plate-description">En sus presentaciones de lata y botella.</p>
+                  </article>
+                  <article class="plate">
+                     <img src="Img/Drinks/beer4.jpg" alt="platillo">
+                     <hr>
+                     <h2 class="plate-name">XX</h2>
+                     <p class="plate-description">En sus presentaciones de lata y botella.</p>
+                  </article> 
+             </article>
+            </section>
+         </section>
+         <section name="kids" id="menu-kids">
+            <a name="kids"></a>
+            <h1><i class="fa-solid fa-gamepad"></i> Menu Kids <i class="fa-solid fa-futbol"></i></h1>
+            <p>Contamos con esta sección para los más pequeños, incluyendo platillos balanceados y deliciosos que les encantarán</p>
+            <section class="menu-section" id="menu-kids-plates">
+               <h2><i class="fa-solid fa-fish"></i> Platillos</h2>
+               <article class="plate-container">
+                  <article class="plate">
+                     <img src="Img/Kids/kids-plate-1.jpg" alt="platillo">
+                     <hr>
+                     <h2 class="plate-name">Camarones Empanizados</h2>
+                     <p class="plate-description">Camarones pelados, cubiertos por una capa crujiente de harina, huevo y pan molido, fritos.</p>
+                  </article>
+                  <article class="plate">
+                     <img src="Img/Kids/kids-plate-2.jpg" alt="platillo">
+                     <hr>
+                     <h2 class="plate-name">Palitos de pescado</h2>
+                     <p class="plate-description">Snacks en forma de varita rectangular, elaborados con pescado blanco, empanado o rebozado.</p>
+                  </article>
+                  <article class="plate">
+                     <img src="Img/Kids/kids-plate-3.jpg" alt="platillo">
+                     <hr>
+                     <h2 class="plate-name">Nuggets de pollo</h2>
+                     <p class="plate-description">Pequeños trozos de carne de pollo molida, rebozados y fritos, acompañados de papas fritas y ensalada.</p>
+                  </article>
+                  <article class="plate">
+                     <img src="Img/Kids/kids-plate-4.jpg" alt="platillo">
+                     <hr>
+                     <h2 class="plate-name">Arroz con camarones</h2>
+                     <p class="plate-description">Camarones pelados guisados con verduras y acompañados de arroz blanco.</p>
+                  </article>
+             </article>
+            </section>
+            <section class="menu-section" id="menu-kids-drinks">
+               <h2><i class="fa-solid fa-bottle-water"></i> Bebidas</h2>
+               <article class="plate-container">
+                  <article class="plate">
+                     <img src="Img/Kids/kids-drink-1.jpg" alt="platillo">
+                     <hr>
+                     <h2 class="plate-name">Jugo Del Valle</h2>
+                     <p class="plate-description">En cualquiera de sus presentaciones de botella de 500ml: Naranja, Mango, Manzana, etc.</p>
+                  </article>
+                  <article class="plate">
+                     <img src="Img/Kids/kids-drink-2.jpeg" alt="platillo">
+                     <hr>
+                     <h2 class="plate-name">Boing de sabores</h2>
+                     <p class="plate-description">En cualquiera de sus presentaciones de cajita de 500ml: Mango, Uva, Durazno, etc.</p>
+                  </article>
+                  <article class="plate">
+                     <img src="Img/Kids/kids-drink-3.webp" alt="platillo">
+                     <hr>
+                     <h2 class="plate-name">Agua Natural</h2>
+                     <p class="plate-description">Refrescante y viene en botellas pequeñas para ellos.</p>
+                  </article>
+             </article>
+            </section>
+            <section class="menu-section" id="menu-kids-dessert">
+               <h2><i class="fa-solid fa-cookie-bite"></i> Postres</h2>
+               <article class="plate-container">
+                  <article class="plate">
+                     <img src="Img/Kids/dessert-1.jpg" alt="platillo">
+                     <hr>
+                     <h2 class="plate-name">Helado variado</h2>
+                     <p class="plate-description">Tenemos fresa, vainilla y chocolate.</p>
+                  </article>
+                  <article class="plate">
+                     <img src="Img/Kids/dessert-2.avif" alt="platillo">
+                     <hr>
+                     <h2 class="plate-name">Flan</h2>
+                     <p class="plate-description">Delicioso y esponjoso, con un sabor muy mágico.</p>
+                  </article>
+                  <article class="plate">
+                     <img src="Img/Kids/dessert-3.jpg" alt="platillo">
+                     <hr>
+                     <h2 class="plate-name">Carlota de limón</h2>
+                     <p class="plate-description">Hecho con galletas Marías y leche condensada.</p>
+                  </article>
+             </article>
+            </section>
+         </section>
       </main>
         <footer>
          <div>
