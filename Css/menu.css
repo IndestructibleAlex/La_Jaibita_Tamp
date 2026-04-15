@@ -56,7 +56,7 @@ main div i{
     width: 80%;
     margin-top: 40px;
 }
-.menu-section h2{
+.section-title{
     text-align: start;
     font-size: 20px;
     margin-left: 50px;
@@ -81,7 +81,7 @@ main div i{
     transform: scale(1.15);
 }
 .plate h2{
-    text-align: left;
+    text-align: center;
 }
 #menu-drinks{
     width: 100%;
@@ -158,4 +158,22 @@ main div i{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
     margin-bottom: 40px;
+}
+@media screen and (max-width: 830px){
+    .publicidad{
+        flex-direction: column;
+    }
+    .publicidad article{
+        max-width: 80%;
+    }
+    .publicidad article h3{
+        animation: none;
+    }
+    #menu-kids h1{
+        max-width: 80%;
+        text-align: center;
+    }
+    #menu-kids p{
+        max-width: 80%;
+    }
 }

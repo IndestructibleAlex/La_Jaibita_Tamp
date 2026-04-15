@@ -209,6 +209,7 @@ iframe{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     z-index: 10;
     display: none;
     opacity: 0;
@@ -235,6 +236,13 @@ iframe{
     }
     .contact-form article{
         max-width: 80%;
+        width: 80%;
+    }
+    #reservation-dialog{
+        width:90%;
+        height: auto;
+    }
+    #reservation-dialog img{
         width: 80%;
     }
 }
