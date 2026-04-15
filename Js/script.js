@@ -126,3 +126,7 @@ function close_dialog(){
     dialog.opacity = "0";
     dialog.style.display = "none";
 }
+function sub(){
+    document.getElementById("message").innerHTML = "<br>Gracias por su subscripción";
+
+}

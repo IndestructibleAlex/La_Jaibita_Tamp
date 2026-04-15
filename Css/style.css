@@ -101,7 +101,7 @@ a{
     font-weight: bold;
     transition: all 0.3s ease-in-out;
 }
-a:hover{
+nav a:hover{
     color: #093172;
 }
 p{
@@ -138,6 +138,15 @@ nav a::after{
 }
 nav a:hover::after{
     width: 100%;
+}
+#btn_subscribe a{
+    transition: none;
+}
+#btn_subscribe a:hover{
+    color: white;
+}
+#btn_subscribe a:after{
+    content: none;
 }
 .menu-icon { display: none;}
 .menu-icon i{
@@ -656,6 +665,10 @@ footer div article{
     }
     #isotipo{
         height: 50px;
+        animation: none;
+    }
+    #logo{
+        animation: none;
     }
     header{
         padding: 20px;

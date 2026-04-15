@@ -1,0 +1,80 @@
+:root{
+    --primary-color: #1067f4;
+    --secondary-color: #e7e6e6;
+    --third-color: #0e0d11;
+    --text-color: #1f1f1f;
+    --text-color-dark: #d3d3d3;
+    --text-body-font: "Bookman Old Style", sans-serif;
+    --text-title-font: Georgia, 'Times New Roman', Times, serif;
+}
+.subscribe-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    min-height: 100vh;
+}
+.subscribe-section img{
+    width: 45%;
+}
+.subscribe-section article{
+    width: 40%;
+}
+.subscribe-section h2{
+    color: var(--primary-color);
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.subscribe-section p{
+    font-weight: normal;
+    font-size: 17px;
+    font-family: "Bookman Old Style", sans-serif;
+    margin-bottom: 10px;
+}
+.subscribe-section ul{
+    margin-bottom: 20px;
+}
+fieldset{
+    border: 2px solid var(--primary-color);
+    padding: 20px;
+}
+legend{
+    font-weight: bold;
+}
+fieldset label,input{
+    margin-bottom: 10px;
+}
+fieldset input{
+    outline: none;
+    background-color: white;
+    border: 0;
+    padding: 5px;
+    margin-left: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#btn_sub{
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 0;
+    width: 300px;
+    margin-bottom: 20px;
+}
+#btn_sub:hover{
+    background-color: #073682;
+}
+@media screen and (max-wdith: 767px){
+    .subscribe-section{
+        flex-direction: column;
+    }
+    .subscribe-section article{
+        width: 80%;
+    }
+    .subscribe-section img{
+        width: 90%;
+    }
+}
