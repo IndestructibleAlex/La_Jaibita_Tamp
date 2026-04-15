@@ -64,14 +64,14 @@ main div i{
 .plate-container{
     margin-top: 20px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 20px;
 }
 .plate{
     width: 200px;
-    height: 360px;
+    height: auto;
 }
 .plate img{
     width: 100%;
